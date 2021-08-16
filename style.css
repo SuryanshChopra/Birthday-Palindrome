@@ -1,0 +1,81 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.main {
+    text-align: center;
+    margin: 3rem;
+    
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.input-label {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.input {
+    /* outline: #fff */
+    padding: 0.5rem 1 rem;
+    margin: 1rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    max-width: 258px;
+    width: 100%;
+
+}
+
+#show-btn {
+    /* display: block; */
+    /* align-items: center; */
+    justify-content: center; 
+    text-align: center; 
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer {
+    width: 100%;
+    min-height: 6vh;
+    position: fixed;
+    bottom: 0.5rem;   
+}
+
+.footer-list {
+    height: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-inline-start: 0px;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+    
+}
+
+.list-item-index {
+    list-style: none;
+    font-size: 2rem;
+    /* padding: 10rem 1rem 0rem; */
+    padding: 0.5rem 1rem;
+    
+}
