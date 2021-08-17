@@ -200,14 +200,12 @@ function getPreviousPalindromeDate(date){
 return [ctr, previousDate];
 
 
-
-
-  
 }
 
 var dateInput = document.querySelector("#input-id")
 var button = document.querySelector("#show-btn")
 var output = document.querySelector(".output")
+var output0 = document.querySelector(".output0")
 
 
 function clickHandler(e){
@@ -228,7 +226,8 @@ function clickHandler(e){
 
 
     if(isPalindrome){
-      output.innerText = "Congratulations! Your bday is a palindrome"
+      output.innerHTML = `<div style="font-size: 1.5rem;" > Congratulations! Your bday is a palindrome </div>`
+      output0.innerHTML=  `<div style="background-color: rgb(255, 255,255,0.2); padding: 1rem" ><img src="/images/happy.svg" alt="happy"></div>`;
     }
 
     else {
@@ -238,8 +237,13 @@ function clickHandler(e){
       
       if (ctr1 > ctr2) {
         output.innerText = `The nearest palindrome date is ${previousDate.day}-${previousDate.month}-${previousDate.year}, you missed by ${ctr2} days.`;
+        output0.innerHTML=  `<div style="background-color: rgb(255, 255,255,0.2); padding: 1rem" ><img src="/images/unhappy.svg" alt="unhappy"></div>`;
+
+       
       } else {
-        output.innerText = `The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed by ${ctr1} days.`; 
+        output.innerText = `The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed by ${ctr1} days.`;
+        output0.innerHTML=  `<div style="background-color: rgb(255, 255,255,0.2); padding: 1rem" ><img src="/images/unhappy.svg" alt="unhappy"></div>`; 
+        
     }
   }
 
