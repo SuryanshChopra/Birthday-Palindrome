@@ -1,5 +1,4 @@
 # Birthday-palindrome
-Is your Birthday a palindrome? Why not check here!
-
+Mark 13: Palindrome Birthday
 
 Live project: https://3u3fi.csb.app/
